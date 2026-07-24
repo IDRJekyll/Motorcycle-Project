@@ -1,0 +1,54 @@
+.specPage {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    align-items: center;
+}
+
+.specSection {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    background: rgb(52, 21, 1);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 70%;
+    font-size: large;
+}
+
+.specSection img {
+    width: auto;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.specText {
+    flex: 1;
+    color: #fff;
+}
+
+.specSection:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+
+.searchBar {
+    display: flex;
+    gap: 15px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.searchBar input,
+.searchBar select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    color: white;
+    border: 1px solid #ccc;
+    background-color: rgb(52, 21, 1);
+}
