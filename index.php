@@ -131,8 +131,6 @@ include("config/db_connect.php");
                     </div>
                 </div>
             </div>
-
-
         </div>
 </body>
 

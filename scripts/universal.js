@@ -1,4 +1,3 @@
-// Dropdown toggle for sidebar menu
 var dropdown = document.getElementsByClassName("dropdown-btn");
 for (let i = 0; i < dropdown.length; i++) {
     dropdown[i].addEventListener("click", function () {
@@ -21,7 +20,7 @@ toggleBtn.addEventListener("click", () => {
     toggleBtn.textContent = navbar.classList.contains("hidden") ? "❯" : "❮";
 });
 
-// Search bar filters
+// Search bar
 const searchInput = document.getElementById("searchInput");
 const manufacturerFilter = document.getElementById("manufacturerFilter");
 const ccFilter = document.getElementById("ccFilter");
@@ -57,7 +56,6 @@ function filterBikes() {
         }
     });
 
-    // sort by cc
     if (ccOption === "asc" || ccOption === "desc") {
         const visibleSections = sections.filter(s => s.style.display !== "none");
         visibleSections.sort((a, b) => {
@@ -69,18 +67,17 @@ function filterBikes() {
     }
 }
 
-// Event listeners
 searchInput.addEventListener("input", filterBikes);
 manufacturerFilter.addEventListener("change", filterBikes);
 ccFilter.addEventListener("change", filterBikes);
 typeFilter.addEventListener("change", filterBikes);
 
-// Pre-select type from URL query string
+// Pre-select type from URL
 window.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
     const type = params.get("type");
     if (type) {
         typeFilter.value = type;
-        filterBikes(); // run filter immediately
+        filterBikes();
     }
 });
