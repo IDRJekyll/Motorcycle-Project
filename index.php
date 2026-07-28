@@ -39,7 +39,7 @@ include("config/db_connect.php");
             <h1>MOTORCYCLES</h1>
         </div>
         <div class="indContent">
-            <div class="indSection" onclick="location.href='sport.php'">
+            <div class="indSection" onclick="location.href='bikes.php?type=Sport'">
                 <img src="img/sport.jpg" alt="Sport motorcycle">
                 <div class="indText">
                     <h2>Sport</h2>
@@ -47,7 +47,7 @@ include("config/db_connect.php");
                 </div>
             </div>
 
-            <div class="indSection alt">
+            <div class="indSection alt" onclick="location.href='bikes.php?type=Naked'">
                 <img src="img/naked.jpg" alt="Naked motorcycle">
                 <div class="indText">
                     <h2>Naked</h2>
@@ -56,7 +56,7 @@ include("config/db_connect.php");
                 </div>
             </div>
 
-            <div class="indSection">
+            <div class="indSection" onclick="location.href='bikes.php?type=Cruiser'">
                 <img src="img/cruiser.png" alt="Cruiser motorcycle">
                 <div class="indText">
                     <h2>Cruiser</h2>
@@ -65,7 +65,7 @@ include("config/db_connect.php");
                 </div>
             </div>
 
-            <div class="indSection alt">
+            <div class="indSection alt" onclick="location.href='bikes.php?type=Touring'">
                 <img src="img/touring.png" alt="Touring motorcycle">
                 <div class="indText">
                     <h2>Touring</h2>
@@ -73,21 +73,21 @@ include("config/db_connect.php");
                         for extended journeys.</p>
                 </div>
             </div>
-            <div class="indSection">
+            <div class="indSection" onclick="location.href='bikes.php?type=Off-Road'">
                 <img src="img/off_road.png" alt="Off-road motorcycle">
                 <div class="indText">
                     <h2>Off Road</h2>
                     <p>Lightweight motorcycles built for riding on dirt, mud, sand, and other challenging terrains.</p>
                 </div>
             </div>
-            <div class="indSection alt">
+            <div class="indSection alt" onclick="location.href='bikes.php?type=Dual'">
                 <img src="img/dual.png" alt="Dual motorcycle">
                 <div class="indText">
                     <h2>Dual</h2>
                     <p>Street-legal motorcycles capable of handling both paved roads and off-road trails with ease.</p>
                 </div>
             </div>
-            <div class="indSection">
+            <div class="indSection" onclick="location.href='bikes.php?type=Sport-Touring'">
                 <img src="img/sport_touring.png" alt="Sport-touring motorcycle">
                 <div class="indText">
                     <h2>Sport-Touring</h2>

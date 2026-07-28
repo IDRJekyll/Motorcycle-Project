@@ -19,13 +19,13 @@
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-container">
-                <a href="#">Sport</a>
-                <a href="#">Naked</a>
-                <a href="#">Cruiser</a>
-                <a href="#">Touring</a>
-                <a href="#">Off-Road</a>
-                <a href="#">Dual</a>
-                <a href="#">Sport-Touring</a>
+                <a href="bikes.php?type=Sport">Sport</a>
+                <a href="bikes.php?type=Naked">Naked</a>
+                <a href="bikes.php?type=Cruiser">Cruiser</a>
+                <a href="bikes.php?type=Touring">Touring</a>
+                <a href="bikes.php?type=OffRoad">Off-Road</a>
+                <a href="bikes.php?type=Dual">Dual</a>
+                <a href="bikes.php?type=SportTouring">Sport-Touring</a>
             </div>
             <a href="#">Gear</a>
         </div>
