@@ -9,6 +9,8 @@ function App() {
   const [weight, setWeight] = useState("");
   const [image, setImage] = useState("");
 
+  const [message, setMessage] = useState("");
+
   async function handleSubmit(event) {
     event.preventDefault();
 
@@ -35,9 +37,24 @@ function App() {
       }
     );
 
-    const json = await response.json();
+    const data = await response.json();
 
-    console.log("PHP responded:", json);
+    console.log("PHP responded:", data);
+
+    if (data.success) {
+      setMessage("Your motorcycle has been added successfully.")
+
+      setName("");
+      setManufacturer("");
+      setEngine("");
+      setPower("");
+      setFuel("");
+      setWeight("");
+      setImage("");
+    }
+    else {
+      setMessage("Failed to add due to error. Please try again later.")
+    }
   }
 
   return (
@@ -114,6 +131,7 @@ function App() {
           Add Motorcycle
         </button>
 
+        {message && <p>{message}</p>}
       </form>
 
     </div>
