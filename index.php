@@ -30,6 +30,7 @@ include("config/db_connect.php");
                 <a href="bikes.php?type=SportTouring">Sport-Touring</a>
             </div>
             <a href="#">Gear</a>
+            <a href="#">Add Bike</a>
         </div>
         <button id="toggleNav" class="hidenav">❯</button>
     </div>

@@ -25,6 +25,7 @@
                 <a href="#">Sport-Touring</a>
             </div>
             <a href="#">Gear</a>
+            <a href="#">Add Bike</a>
         </div>
     </div>
     <div>
