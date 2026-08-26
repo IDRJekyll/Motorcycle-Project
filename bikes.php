@@ -1,3 +1,7 @@
+<?php
+include("config/db_connect.php")
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,7 +36,7 @@
         <button id="toggleNav" class="hidenav">❯</button>
     </div>
     <div class="searchBar">
-        <input type="text" id="searchInput" placeholder="Search by name, manufacturer, specs...">
+        <input type="text" id="searchInput" placeholder="Search by name">
 
         <select id="manufacturerFilter">
             <option value="">All</option>
