@@ -4,6 +4,7 @@ import "./App.css";
 
 function App() {
   const [bikes, setBikes] = useState([]);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     fetch("http://localhost/motorwebsite/api/get_bikes.php")
@@ -14,12 +15,24 @@ function App() {
       });
   }, []);
 
+  const filterBikes = bikes.filter((bike) =>
+    bike.name.toLowerCase().includes(search.toLowerCase()) ||
+    bike.manufacturer.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <div className="specPage">
       <h1>Motorcycles</h1>
 
+      <div className="searchBar">
+        <input
+          type="text" placeholder="Search Bikes"
+          value={search}
+          onChange={(event) => setSearch(event.target.value)}
+        />
+      </div>
       {
-        bikes.map((bike) => (
+        filterBikes.map((bike) => (
           <MotoCard
             key={bike.bikeID}
             bike={bike}
