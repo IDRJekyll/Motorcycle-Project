@@ -1,3 +1,28 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: rgb(52, 21, 1);
+  padding: 15px 30px;
+
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 15px;
+
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #ccc;
+}
+
 .specPage {
   display: flex;
   flex-direction: column;
@@ -34,6 +59,7 @@
   box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
+
 
 .searchBar {
   display: flex;
