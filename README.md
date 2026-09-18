@@ -3,6 +3,10 @@ Personal motorcycle web project. Over the course of the next few weeks, this wil
 Project serves no real value besides learning more about different types of motorcycles, getting to know their appearance and characteristics.
 For now, the only real languages used are HTML CSS & JS. However, later on a big part will play PHP and SQL, for direct communication with a database.
 
+Addition of OOP to easily handle motorcycles as objects.
+
 Practice of allowing users to safely input new items into the database, for them to be displayed on the site, and for the site to prevent any security risks from getting through.
 
 Works on a local server using xampp, due to requiring a database connection. The database is hosted via DBeaver.
+
+Using: HTML, CSS, JavaScript, PHP, SQL, React, 
